@@ -1,0 +1,12 @@
+# Mount point	fs		[device]	[Flags]
+/boot		emmc	/dev/block/mmcblk0p15	
+/cache		auto	/dev/block/mmcblk0p4	
+/data		auto	/dev/block/mmcblk0p5	
+/efs		ext4	/dev/block/mmcblk0p7	flags=display="EFS";backup=1
+/preload	ext4	/dev/block/mmcblk0p9	flags=display="Preload";backup=1;wipeingui
+## /recovery	emmc	/dev/block/mmcblk0p17
+/system		auto	/dev/block/mmcblk0p3	
+/modem		ext4	/dev/block/mmcblk0p2	flags=display="Modem";backup=1
+# Mount point	[fs]		[device]	[Flags]
+/sdcard		vfat	/dev/block/mmcblk0p8	flags=wipeingui;storage:settingsstorage
+/external_sd	vfat	/dev/block/mmcblk1p1	flags=wipeingui;storage;removable
